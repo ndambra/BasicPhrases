@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="0"
+            android:text="@string/do_you_speak_english"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="1"
+            android:text="@string/good_evening"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="2"
+            android:text="@string/hello"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="3"
+            android:text="@string/how_are_you"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="4"
+            android:text="@string/i_live_in"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="5"
+            android:text="@string/my_name_is"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="6"
+            android:text="@string/please"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playPhrase"
+            android:tag="7"
+            android:text="@string/welcome"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/app_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
